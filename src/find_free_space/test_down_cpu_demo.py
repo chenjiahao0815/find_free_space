@@ -292,21 +292,8 @@ class CarAvoidancePointActionServer(Node):
             self.get_robot_pose_timer_.cancel()
             self.destroy_timer(self.get_robot_pose_timer_)
             self.get_robot_pose_timer_ = None
-        if self.tf_listener is not None:
-            if hasattr(self.tf_listener, 'unregister') and callable(getattr(self.tf_listener, 'unregister')):
-                self.tf_listener.unregister()
-            else:
-                try:
-                    self.destroy_subscription(self.tf_listener.subscription)
-                except Exception:
-                    pass
         self.tf_listener = None
-        if self.tf_buffer is not None:
-            del self.tf_buffer
         self.tf_buffer = None
-        import gc
-        gc.collect()
-        print(f"[DEBUG] after stop, threads: {len(psutil.Process().threads())}")
         self.get_logger().info("TF listener stopped")
 
     def get_robot_pose_timer_callback(self):

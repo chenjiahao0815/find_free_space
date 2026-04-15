@@ -1,221 +1,349 @@
 root@tj2022-Default-string:/capella/lib/python3.10/site-packages/find_free_space# ros2 launch /capella/lib/python3.10/site-packages/find_free_space/src/launch/find_free_space.launch.py
-[INFO] [launch]: All log files can be found below /root/.ros/log/2026-04-15-02-49-50-437726-tj2022-Default-string-78303
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-04-15-06-17-29-532050-tj2022-Default-string-369816
 [INFO] [launch]: Default logging verbosity is set to INFO
 Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MIN value: 3.0.
 Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MAX value: 4.0.
 Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MIN value: 0.0.
 Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MAX value: 0.5.
-[INFO] [find_parking_space-1]: process started with pid [78330]
+[INFO] [find_parking_space-1]: process started with pid [369831]
 [find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
 [find_parking_space-1]   setattr(self, word, getattr(machar, word).flat[0])
 [find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
 [find_parking_space-1]   return self._float_to_str(self.smallest_subnormal)
-[find_parking_space-1] 1776221391.526960 [0] find_parki: config: //CycloneDDS/Domain/Internal/MinimumSocketReceiveBufferSize: setting moved to //CycloneDDS/Domain/Internal/SocketReceiveBufferSize[@min] (/capella/dds.xml line 15)
-[find_parking_space-1] [INFO] [1776221391.761190094] [find_free_space_action_server]: find_free_space_action_server started.
-[find_parking_space-1] [INFO] [1776221391.782343942] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
-[find_parking_space-1] [INFO] [1776221391.783655314] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
-[find_parking_space-1] [INFO] [1776221391.785919106] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
-[find_parking_space-1] [INFO] [1776221391.788290878] [find_free_space_action_server]: search_interval: 0.5
-[find_parking_space-1] [INFO] [1776221391.790366014] [find_free_space_action_server]: search_radius_min: 3.0
-[find_parking_space-1] [INFO] [1776221391.791683335] [find_free_space_action_server]: search_radius_max: 4.0
-[find_parking_space-1] [INFO] [1776221391.792302706] [find_free_space_action_server]: search_radius_extra_dis: 2.0
-[find_parking_space-1] [INFO] [1776221391.796424660] [find_free_space_action_server]: outside_min: 0.0
-[find_parking_space-1] [INFO] [1776221391.797161342] [find_free_space_action_server]: outside_max: 0.5
-[find_parking_space-1] [INFO] [1776221391.797756317] [find_free_space_action_server]: check_service_max_time: 1.0
-[find_parking_space-1] [INFO] [1776221391.798352089] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
-[find_parking_space-1] [INFO] [1776221391.798924698] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[find_parking_space-1] 1776233850.890454 [0] find_parki: config: //CycloneDDS/Domain/Internal/MinimumSocketReceiveBufferSize: setting moved to //CycloneDDS/Domain/Internal/SocketReceiveBufferSize[@min] (/capella/dds.xml line 15)
+[find_parking_space-1] [INFO] [1776233851.114371644] [find_free_space_action_server]: find_free_space_action_server started.
+[find_parking_space-1] [INFO] [1776233851.131838443] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[find_parking_space-1] [INFO] [1776233851.132566543] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[find_parking_space-1] [INFO] [1776233851.133740820] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[find_parking_space-1] [INFO] [1776233851.134340113] [find_free_space_action_server]: search_interval: 0.5
+[find_parking_space-1] [INFO] [1776233851.134910266] [find_free_space_action_server]: search_radius_min: 3.0
+[find_parking_space-1] [INFO] [1776233851.135439773] [find_free_space_action_server]: search_radius_max: 4.0
+[find_parking_space-1] [INFO] [1776233851.135958273] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[find_parking_space-1] [INFO] [1776233851.136605012] [find_free_space_action_server]: outside_min: 0.0
+[find_parking_space-1] [INFO] [1776233851.137818582] [find_free_space_action_server]: outside_max: 0.5
+[find_parking_space-1] [INFO] [1776233851.138394424] [find_free_space_action_server]: check_service_max_time: 1.0
+[find_parking_space-1] [INFO] [1776233851.138904901] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[find_parking_space-1] [INFO] [1776233851.139475316] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
 [find_parking_space-1] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
 [find_parking_space-1]   warnings.warn(
-[find_parking_space-1] [INFO] [1776221391.919057661] [find_free_space_action_server]: robot_width: 1.32
-[find_parking_space-1] [INFO] [1776221396.364956504] [find_free_space_action_server]: 开始寻找避让点...
-[find_parking_space-1] [INFO] [1776221396.367898702] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=-16.0, y=22.5, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=22.5, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=27.5, z=0.0), geometry_msgs.msg.Point32(x=-16.0, y=27.5, z=0.0)])]
-[find_parking_space-1] [INFO] [1776221396.386449120] [find_free_space_action_server]: 寻找当前通行区域...
-[find_parking_space-1] [INFO] [1776221396.397333276] [find_free_space_action_server]: i: 0, j: 3
-[find_parking_space-1] [INFO] [1776221396.399427352] [find_free_space_action_server]: robot_x: 8.022631467992863, robot_y: 21.934386933074368
-[find_parking_space-1] [INFO] [1776221396.400631523] [find_free_space_action_server]: xi: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.401593191] [find_free_space_action_server]: xj: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.402443076] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.403463590] [find_free_space_action_server]: i: 1, j: 0
-[find_parking_space-1] [INFO] [1776221396.404223206] [find_free_space_action_server]: robot_x: 8.022631467992863, robot_y: 21.934386933074368
-[find_parking_space-1] [INFO] [1776221396.404908619] [find_free_space_action_server]: xi: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.405812456] [find_free_space_action_server]: xj: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.409830347] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.411516056] [find_free_space_action_server]: i: 2, j: 1
-[find_parking_space-1] [INFO] [1776221396.419579697] [find_free_space_action_server]: robot_x: 8.022631467992863, robot_y: 21.934386933074368
-[find_parking_space-1] [INFO] [1776221396.420510219] [find_free_space_action_server]: xi: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.425524940] [find_free_space_action_server]: xj: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.426521650] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.429278056] [find_free_space_action_server]: i: 3, j: 2
-[find_parking_space-1] [INFO] [1776221396.430428817] [find_free_space_action_server]: robot_x: 8.022631467992863, robot_y: 21.934386933074368
-[find_parking_space-1] [INFO] [1776221396.435816507] [find_free_space_action_server]: xi: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.440363038] [find_free_space_action_server]: xj: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.448582561] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.462095788] [find_free_space_action_server]: robot: (8.022544030747682, 21.934455153918652)
-[find_parking_space-1] [INFO] [1776221396.470958246] [find_free_space_action_server]: polygons: 
-[find_parking_space-1] [[-16.   22.5]
-[find_parking_space-1]  [ 14.   22.5]
+[find_parking_space-1] [ERROR] [1776233851.272835414] [find_free_space_action_server]: Lookup would require extrapolation at time 1776233851.253164, but only time 1776233851.257456 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[find_parking_space-1] [INFO] [1776233851.369895666] [find_free_space_action_server]: robot_width: 1.32
+[find_parking_space-1] [INFO] [1776233856.084722561] [find_free_space_action_server]: 开始寻找避让点...
+[find_parking_space-1] [INFO] [1776233856.095853151] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=-16.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=27.5, z=0.0), geometry_msgs.msg.Point32(x=-16.0, y=27.5, z=0.0)])]
+[find_parking_space-1] [INFO] [1776233856.100777710] [find_free_space_action_server]: 寻找当前通行区域...
+[find_parking_space-1] [INFO] [1776233856.111061687] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233856.112600155] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.118379718] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.120998398] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.130871960] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.131941037] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233856.133407301] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.134145395] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.134763248] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.135386660] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.136141022] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233856.136686945] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.139256435] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.140007315] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.144281323] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233856.145872038] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233856.146971425] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.147418864] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.147779078] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.148246789] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.148717187] [find_free_space_action_server]: robot: (3.314209024636519, 21.577096939292986)
+[find_parking_space-1] [INFO] [1776233856.154720625] [find_free_space_action_server]: polygons: 
+[find_parking_space-1] [[-16.   21. ]
+[find_parking_space-1]  [ 14.   21. ]
 [find_parking_space-1]  [ 14.   27.5]
 [find_parking_space-1]  [-16.   27.5]]
-[find_parking_space-1] [INFO] [1776221396.476176709] [find_free_space_action_server]: inside polygon: False
-[find_parking_space-1] [INFO] [1776221396.477811618] [find_free_space_action_server]: robot_to_polygon dis: 0.5655448460813469
-[find_parking_space-1] [INFO] [1776221396.486141055] [find_free_space_action_server]: update self.vertices: [[-16.   22.5]
-[find_parking_space-1]  [ 14.   22.5]
-[find_parking_space-1]  [ 14.   27.5]
-[find_parking_space-1]  [-16.   27.5]]
-[find_parking_space-1] [INFO] [1776221396.493030493] [find_free_space_action_server]: 当前通行区域: [(-16.0, 22.5),(14.0, 22.5),(14.0, 27.5),(-16.0, 27.5)]
-[find_parking_space-1] [INFO] [1776221396.509663974] [find_free_space_action_server]: 寻找停靠点...
-[find_parking_space-1] [INFO] [1776221396.511044498] [find_free_space_action_server]: origin_x: -28.6295
-[find_parking_space-1] [INFO] [1776221396.525467180] [find_free_space_action_server]: origin_y: -14.205
-[find_parking_space-1] [INFO] [1776221396.528245360] [find_free_space_action_server]: resolution: 0.10000000149011612
-[find_parking_space-1] [INFO] [1776221396.546704362] [find_free_space_action_server]: width: 851
-[find_parking_space-1] [INFO] [1776221396.552032903] [find_free_space_action_server]: height: 616
-[find_parking_space-1] [INFO] [1776221396.567799981] [find_free_space_action_server]: 寻找最近的边界...
-[find_parking_space-1] [INFO] [1776221396.587302130] [find_free_space_action_server]: nearest_boundary: [(-16.0, 22.5), (14.0, 22.5)]
-[find_parking_space-1] [INFO] [1776221396.591855091] [find_free_space_action_server]: delta_y: 0.0
-[find_parking_space-1] [INFO] [1776221396.592598151] [find_free_space_action_server]: delta_x: -30.0
-[find_parking_space-1] [INFO] [1776221396.596185309] [find_free_space_action_server]: k_radian: 3.141592653589793
-[find_parking_space-1] [INFO] [1776221396.599126531] [find_free_space_action_server]: k_degree: 180.0
-[find_parking_space-1] [INFO] [1776221396.600232436] [find_free_space_action_server]: kdirections_: [3.141592653589793, 0.0]
-[find_parking_space-1] [INFO] [1776221396.603584582] [find_free_space_action_server]: robot: (8.023519369513284, 21.93220237247154)
-[find_parking_space-1] [INFO] [1776221396.610568744] [find_free_space_action_server]: car: (9.0, 25.0)
-[find_parking_space-1] [INFO] [1776221396.617212262] [find_free_space_action_server]: k: 3.141592653589793, car_robot_k: -1.8789566123246344
-[find_parking_space-1] [INFO] [1776221396.619352855] [find_free_space_action_server]: k_diff: 1.262636041265159
-[find_parking_space-1] [INFO] [1776221396.621576011] [find_free_space_action_server]: k: 3.141592653589793, k_robot: 1.4668351519510088, k_diff2: 1.6747575016387843
-[find_parking_space-1] [INFO] [1776221396.622354323] [find_free_space_action_server]: 在机器人后方避车
-[find_parking_space-1] [INFO] [1776221396.628150689] [find_free_space_action_server]: i: 0, j: 3
-[find_parking_space-1] [INFO] [1776221396.633572275] [find_free_space_action_server]: robot_x: 8.023519369513284, robot_y: 21.93220237247154
-[find_parking_space-1] [INFO] [1776221396.635489673] [find_free_space_action_server]: xi: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.636698373] [find_free_space_action_server]: xj: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.638854463] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.639497456] [find_free_space_action_server]: i: 1, j: 0
-[find_parking_space-1] [INFO] [1776221396.640862457] [find_free_space_action_server]: robot_x: 8.023519369513284, robot_y: 21.93220237247154
-[find_parking_space-1] [INFO] [1776221396.652185186] [find_free_space_action_server]: xi: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.655740323] [find_free_space_action_server]: xj: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.656329176] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.657000259] [find_free_space_action_server]: i: 2, j: 1
-[find_parking_space-1] [INFO] [1776221396.657579094] [find_free_space_action_server]: robot_x: 8.023519369513284, robot_y: 21.93220237247154
-[find_parking_space-1] [INFO] [1776221396.658063013] [find_free_space_action_server]: xi: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.659571893] [find_free_space_action_server]: xj: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221396.660903265] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.661529300] [find_free_space_action_server]: i: 3, j: 2
-[find_parking_space-1] [INFO] [1776221396.662140949] [find_free_space_action_server]: robot_x: 8.023519369513284, robot_y: 21.93220237247154
-[find_parking_space-1] [INFO] [1776221396.664092135] [find_free_space_action_server]: xi: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.665119376] [find_free_space_action_server]: xj: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221396.665707371] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221396.667289945] [find_free_space_action_server]: 返回机器人当前点为停靠点
-[find_parking_space-1] [INFO] [1776221396.672059318] [find_free_space_action_server]: avoidance_point:geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776221396, nanosec=667508092), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=8.023519369513284, y=21.93220237247154, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)))
-[find_parking_space-1] [INFO] [1776221396.673951724] [find_free_space_action_server]: 成功找到避让点geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776221396, nanosec=667508092), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=8.023519369513284, y=21.93220237247154, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)))
-[find_parking_space-1] [INFO] [1776221396.676835694] [find_free_space_action_server]: 成功找到避让点*****
-[find_parking_space-1] [INFO] [1776221396.696469364] [find_free_space_action_server]: === 性能统计 === 总耗时: 0.3165s, CPU时间: 0.2199s, CPU平均: 66.4%, CPU峰值: 145.7%
-
+[find_parking_space-1] [INFO] [1776233856.155695788] [find_free_space_action_server]: inside polygon: True
+[find_parking_space-1] [INFO] [1776233856.156750895] [find_free_space_action_server]: 当前通行区域: [(-16.0, 21.0),(14.0, 21.0),(14.0, 27.5),(-16.0, 27.5)]
+[find_parking_space-1] [INFO] [1776233856.157494203] [find_free_space_action_server]: 寻找停靠点...
+[find_parking_space-1] [INFO] [1776233856.158274046] [find_free_space_action_server]: origin_x: -28.6295
+[find_parking_space-1] [INFO] [1776233856.158986476] [find_free_space_action_server]: origin_y: -14.205
+[find_parking_space-1] [INFO] [1776233856.159685080] [find_free_space_action_server]: resolution: 0.10000000149011612
+[find_parking_space-1] [INFO] [1776233856.160591486] [find_free_space_action_server]: width: 851
+[find_parking_space-1] [INFO] [1776233856.161126905] [find_free_space_action_server]: height: 616
+[find_parking_space-1] [INFO] [1776233856.164303365] [find_free_space_action_server]: 寻找最近的边界...
+[find_parking_space-1] [INFO] [1776233856.165129361] [find_free_space_action_server]: nearest_boundary: [(-16.0, 21.0), (14.0, 21.0)]
+[find_parking_space-1] [INFO] [1776233856.165681574] [find_free_space_action_server]: delta_y: 0.0
+[find_parking_space-1] [INFO] [1776233856.166235787] [find_free_space_action_server]: delta_x: -30.0
+[find_parking_space-1] [INFO] [1776233856.176803825] [find_free_space_action_server]: k_radian: 3.141592653589793
+[find_parking_space-1] [INFO] [1776233856.179182209] [find_free_space_action_server]: k_degree: 180.0
+[find_parking_space-1] [INFO] [1776233856.180075206] [find_free_space_action_server]: kdirections_: [3.141592653589793, 0.0]
+[find_parking_space-1] [INFO] [1776233856.186142818] [find_free_space_action_server]: robot: (3.314209024636519, 21.577096939292986)
+[find_parking_space-1] [INFO] [1776233856.186909820] [find_free_space_action_server]: car: (9.0, 25.0)
+[find_parking_space-1] [INFO] [1776233856.188182937] [find_free_space_action_server]: k: 3.141592653589793, car_robot_k: -2.5996965180415468
+[find_parking_space-1] [INFO] [1776233856.205929250] [find_free_space_action_server]: k_diff: 0.5418961355482459
+[find_parking_space-1] [INFO] [1776233856.226060203] [find_free_space_action_server]: k: 3.141592653589793, k_robot: -0.09451637362213226, k_diff2: 3.0470762799676607
+[find_parking_space-1] [INFO] [1776233856.232749769] [find_free_space_action_server]: 在机器人后方避车
+[find_parking_space-1] [INFO] [1776233856.236054818] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233856.237698221] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.240283474] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.241059727] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.244196642] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.244881802] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233856.245429897] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.245988685] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.246473640] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.246998701] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.251953673] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233856.252604151] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.253017632] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.253429466] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233856.253872826] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233856.254629414] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233856.255123999] [find_free_space_action_server]: robot_x: 3.314209024636519, robot_y: 21.577096939292986
+[find_parking_space-1] [INFO] [1776233856.257661613] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.258932091] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233856.259988348] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233856.261743359] [find_free_space_action_server]: 生成所有停靠点...
+[find_parking_space-1] [INFO] [1776233856.267786776] [find_free_space_action_server]: find_vertices: [[-0.68579098 20.5       ]
+[find_parking_space-1]  [ 0.31420902 20.5       ]
+[find_parking_space-1]  [ 0.31420902 21.        ]
+[find_parking_space-1]  [-0.68579098 21.        ]]
+[find_parking_space-1] [INFO] [1776233856.395087839] [find_free_space_action_server]: search_posestamped length: 231
+[find_parking_space-1] [INFO] [1776233856.396878876] [find_free_space_action_server]: 一共231个避障...
+[find_parking_space-1] [INFO] [1776233856.397605585] [find_free_space_action_server]: 排除障碍物点...
+[find_parking_space-1] [INFO] [1776233856.428439896] [find_free_space_action_server]: 排除障碍物点后还剩231个避障...
+[find_parking_space-1] [INFO] [1776233856.435216764] [find_free_space_action_server]: x: 319, y: 357
+[find_parking_space-1] [INFO] [1776233856.441414767] [find_free_space_action_server]: t_x: 289, t_y: 352
+[find_parking_space-1] [INFO] [1776233856.442543746] [find_free_space_action_server]: costmap values: [ 90  90  95 105 153 162 165 162 153 140 162 138 114  93   0   0   0   0
+[find_parking_space-1]    0   0   0   0   0   0   0   0   0   0   0   0   0]
+[find_parking_space-1] [INFO] [1776233856.443293893] [find_free_space_action_server]: 机器人到当前点的连线满足
+[find_parking_space-1] [INFO] [1776233856.445788724] [find_free_space_action_server]: avoidance_point:geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233856, nanosec=361605823), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.314209, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233856.448728493] [find_free_space_action_server]: 成功找到避让点geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233856, nanosec=361605823), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.314209, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233856.452276615] [find_free_space_action_server]: 成功找到避让点*****
+[find_parking_space-1] [INFO] [1776233856.473331445] [find_free_space_action_server]: === 性能统计 === 总耗时: 0.3744s, CPU时间: 0.3342s, CPU平均: 84.5%, CPU峰值: 154.8%
 
 
 root@tj2022-Default-string:/capella/lib/python3.10/site-packages/find_free_space# ros2 launch /capella/lib/python3.10/site-packages/find_free_space/src/launch/find_free_space.launch.py
-[INFO] [launch]: All log files can be found below /root/.ros/log/2026-04-15-02-51-00-026646-tj2022-Default-string-80105
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-04-15-06-18-30-502104-tj2022-Default-string-371538
 [INFO] [launch]: Default logging verbosity is set to INFO
 Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MIN value: 3.0.
 Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MAX value: 4.0.
 Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MIN value: 0.0.
 Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MAX value: 0.5.
-[INFO] [find_parking_space-1]: process started with pid [80116]
+[INFO] [find_parking_space-1]: process started with pid [371550]
 [find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
 [find_parking_space-1]   setattr(self, word, getattr(machar, word).flat[0])
 [find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
 [find_parking_space-1]   return self._float_to_str(self.smallest_subnormal)
-[find_parking_space-1] 1776221461.138389 [0] find_parki: config: //CycloneDDS/Domain/Internal/MinimumSocketReceiveBufferSize: setting moved to //CycloneDDS/Domain/Internal/SocketReceiveBufferSize[@min] (/capella/dds.xml line 15)
-[find_parking_space-1] [INFO] [1776221461.369712267] [find_free_space_action_server]: find_free_space_action_server started.
-[find_parking_space-1] [INFO] [1776221461.385284222] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
-[find_parking_space-1] [INFO] [1776221461.385884917] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
-[find_parking_space-1] [INFO] [1776221461.394596534] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
-[find_parking_space-1] [INFO] [1776221461.395421418] [find_free_space_action_server]: search_interval: 0.5
-[find_parking_space-1] [INFO] [1776221461.403729463] [find_free_space_action_server]: search_radius_min: 3.0
-[find_parking_space-1] [INFO] [1776221461.404434009] [find_free_space_action_server]: search_radius_max: 4.0
-[find_parking_space-1] [INFO] [1776221461.404911240] [find_free_space_action_server]: search_radius_extra_dis: 2.0
-[find_parking_space-1] [INFO] [1776221461.411443437] [find_free_space_action_server]: outside_min: 0.0
-[find_parking_space-1] [INFO] [1776221461.411975927] [find_free_space_action_server]: outside_max: 0.5
-[find_parking_space-1] [INFO] [1776221461.412433090] [find_free_space_action_server]: check_service_max_time: 1.0
-[find_parking_space-1] [INFO] [1776221461.412899394] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
-[find_parking_space-1] [INFO] [1776221461.413346815] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[find_parking_space-1] 1776233911.482342 [0] find_parki: config: //CycloneDDS/Domain/Internal/MinimumSocketReceiveBufferSize: setting moved to //CycloneDDS/Domain/Internal/SocketReceiveBufferSize[@min] (/capella/dds.xml line 15)
+[find_parking_space-1] [INFO] [1776233911.774107478] [find_free_space_action_server]: find_free_space_action_server started.
+[find_parking_space-1] [INFO] [1776233911.786046771] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[find_parking_space-1] [INFO] [1776233911.786873184] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[find_parking_space-1] [INFO] [1776233911.787544522] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[find_parking_space-1] [INFO] [1776233911.788138097] [find_free_space_action_server]: search_interval: 0.5
+[find_parking_space-1] [INFO] [1776233911.792984952] [find_free_space_action_server]: search_radius_min: 3.0
+[find_parking_space-1] [INFO] [1776233911.793897796] [find_free_space_action_server]: search_radius_max: 4.0
+[find_parking_space-1] [INFO] [1776233911.794745207] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[find_parking_space-1] [INFO] [1776233911.795431165] [find_free_space_action_server]: outside_min: 0.0
+[find_parking_space-1] [INFO] [1776233911.796020710] [find_free_space_action_server]: outside_max: 0.5
+[find_parking_space-1] [INFO] [1776233911.796610057] [find_free_space_action_server]: check_service_max_time: 1.0
+[find_parking_space-1] [INFO] [1776233911.797269350] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[find_parking_space-1] [INFO] [1776233911.798032540] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
 [find_parking_space-1] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
 [find_parking_space-1]   warnings.warn(
-[find_parking_space-1] [INFO] [1776221461.490282487] [find_free_space_action_server]: robot_width: 1.32
-[find_parking_space-1] [INFO] [1776221464.658247379] [find_free_space_action_server]: 开始寻找避让点...
-[find_parking_space-1] [INFO] [1776221464.659142168] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=-16.0, y=22.5, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=22.5, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=27.5, z=0.0), geometry_msgs.msg.Point32(x=-16.0, y=27.5, z=0.0)])]
-[find_parking_space-1] [INFO] [1776221464.660663480] [find_free_space_action_server]: 寻找当前通行区域...
-[find_parking_space-1] [INFO] [1776221464.661568721] [find_free_space_action_server]: i: 0, j: 3
-[find_parking_space-1] [INFO] [1776221464.662256045] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.662920329] [find_free_space_action_server]: xi: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.675454021] [find_free_space_action_server]: xj: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.676217087] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.676897932] [find_free_space_action_server]: i: 1, j: 0
-[find_parking_space-1] [INFO] [1776221464.677518116] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.678072333] [find_free_space_action_server]: xi: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.680882673] [find_free_space_action_server]: xj: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.686540615] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.688290504] [find_free_space_action_server]: i: 2, j: 1
-[find_parking_space-1] [INFO] [1776221464.691097746] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.693430486] [find_free_space_action_server]: xi: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.694139702] [find_free_space_action_server]: xj: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.694762320] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.695481413] [find_free_space_action_server]: i: 3, j: 2
-[find_parking_space-1] [INFO] [1776221464.698431272] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.699086118] [find_free_space_action_server]: xi: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.699581283] [find_free_space_action_server]: xj: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.706586065] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.707299559] [find_free_space_action_server]: robot: (8.082433992676767, 21.941035445015334)
-[find_parking_space-1] [INFO] [1776221464.708466157] [find_free_space_action_server]: polygons: 
-[find_parking_space-1] [[-16.   22.5]
-[find_parking_space-1]  [ 14.   22.5]
+[find_parking_space-1] [INFO] [1776233911.967413138] [find_free_space_action_server]: robot_width: 1.32
+[find_parking_space-1] [INFO] [1776233917.996745632] [find_free_space_action_server]: 开始寻找避让点...
+[find_parking_space-1] [INFO] [1776233917.998393737] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=-16.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=27.5, z=0.0), geometry_msgs.msg.Point32(x=-16.0, y=27.5, z=0.0)])]
+[find_parking_space-1] [INFO] [1776233917.998870823] [find_free_space_action_server]: 寻找当前通行区域...
+[find_parking_space-1] [INFO] [1776233918.000972967] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233918.001608703] [find_free_space_action_server]: robot_x: 3.3109051392446993, robot_y: 21.577384758459424
+[find_parking_space-1] [INFO] [1776233918.002029145] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.002463771] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.003053899] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.003794762] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233918.006438097] [find_free_space_action_server]: robot_x: 3.3109051392446993, robot_y: 21.577384758459424
+[find_parking_space-1] [INFO] [1776233918.007110167] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.014093220] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.014655028] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.015137258] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233918.015531213] [find_free_space_action_server]: robot_x: 3.3109051392446993, robot_y: 21.577384758459424
+[find_parking_space-1] [INFO] [1776233918.019627173] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.024611897] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.041876392] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233918.043140443] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233918.043938282] [find_free_space_action_server]: robot_x: 3.3109051392446993, robot_y: 21.577384758459424
+[find_parking_space-1] [INFO] [1776233918.057679330] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.064795547] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.072346637] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.078014478] [find_free_space_action_server]: robot: (3.3124333274482907, 21.577920325239912)
+[find_parking_space-1] [INFO] [1776233918.095800749] [find_free_space_action_server]: polygons: 
+[find_parking_space-1] [[-16.   21. ]
+[find_parking_space-1]  [ 14.   21. ]
 [find_parking_space-1]  [ 14.   27.5]
 [find_parking_space-1]  [-16.   27.5]]
-[find_parking_space-1] [INFO] [1776221464.709052591] [find_free_space_action_server]: inside polygon: False
-[find_parking_space-1] [INFO] [1776221464.715375209] [find_free_space_action_server]: robot_to_polygon dis: 0.5589645549846675
-[find_parking_space-1] [INFO] [1776221464.718768515] [find_free_space_action_server]: update self.vertices: [[-16.   22.5]
-[find_parking_space-1]  [ 14.   22.5]
+[find_parking_space-1] [INFO] [1776233918.098854924] [find_free_space_action_server]: inside polygon: True
+[find_parking_space-1] [INFO] [1776233918.099463641] [find_free_space_action_server]: 当前通行区域: [(-16.0, 21.0),(14.0, 21.0),(14.0, 27.5),(-16.0, 27.5)]
+[find_parking_space-1] [INFO] [1776233918.102330050] [find_free_space_action_server]: 寻找停靠点...
+[find_parking_space-1] [INFO] [1776233918.105579600] [find_free_space_action_server]: origin_x: -28.6295
+[find_parking_space-1] [INFO] [1776233918.121539745] [find_free_space_action_server]: origin_y: -14.205
+[find_parking_space-1] [INFO] [1776233918.122403885] [find_free_space_action_server]: resolution: 0.10000000149011612
+[find_parking_space-1] [INFO] [1776233918.123025232] [find_free_space_action_server]: width: 851
+[find_parking_space-1] [INFO] [1776233918.123636502] [find_free_space_action_server]: height: 616
+[find_parking_space-1] [INFO] [1776233918.134991208] [find_free_space_action_server]: 寻找最近的边界...
+[find_parking_space-1] [INFO] [1776233918.142823682] [find_free_space_action_server]: nearest_boundary: [(-16.0, 21.0), (14.0, 21.0)]
+[find_parking_space-1] [INFO] [1776233918.148717845] [find_free_space_action_server]: delta_y: 0.0
+[find_parking_space-1] [INFO] [1776233918.149792354] [find_free_space_action_server]: delta_x: -30.0
+[find_parking_space-1] [INFO] [1776233918.152117688] [find_free_space_action_server]: k_radian: 3.141592653589793
+[find_parking_space-1] [INFO] [1776233918.161883546] [find_free_space_action_server]: k_degree: 180.0
+[find_parking_space-1] [INFO] [1776233918.162854929] [find_free_space_action_server]: kdirections_: [3.141592653589793, 0.0]
+[find_parking_space-1] [INFO] [1776233918.167193416] [find_free_space_action_server]: robot: (3.3124333274482907, 21.577920325239912)
+[find_parking_space-1] [INFO] [1776233918.167927895] [find_free_space_action_server]: car: (9.0, 25.0)
+[find_parking_space-1] [INFO] [1776233918.172543878] [find_free_space_action_server]: k: 3.141592653589793, car_robot_k: -2.5999407679639766
+[find_parking_space-1] [INFO] [1776233918.177876504] [find_free_space_action_server]: k_diff: 0.5416518856258161
+[find_parking_space-1] [INFO] [1776233918.179262628] [find_free_space_action_server]: k: 3.141592653589793, k_robot: -0.09444723063141822, k_diff2: 3.047145422958375
+[find_parking_space-1] [INFO] [1776233918.179856214] [find_free_space_action_server]: 在机器人后方避车
+[find_parking_space-1] [INFO] [1776233918.180568122] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233918.181119982] [find_free_space_action_server]: robot_x: 3.3124333274482907, robot_y: 21.577920325239912
+[find_parking_space-1] [INFO] [1776233918.181699202] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.186148015] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.186880126] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.187616828] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233918.188285274] [find_free_space_action_server]: robot_x: 3.3124333274482907, robot_y: 21.577920325239912
+[find_parking_space-1] [INFO] [1776233918.191190781] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.196019042] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.196720839] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.197299411] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233918.197724685] [find_free_space_action_server]: robot_x: 3.3124333274482907, robot_y: 21.577920325239912
+[find_parking_space-1] [INFO] [1776233918.198114765] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.198516884] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233918.198983812] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233918.199686618] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233918.200142001] [find_free_space_action_server]: robot_x: 3.3124333274482907, robot_y: 21.577920325239912
+[find_parking_space-1] [INFO] [1776233918.200588225] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.201005198] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233918.201439445] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233918.204452753] [find_free_space_action_server]: 生成所有停靠点...
+[find_parking_space-1] [INFO] [1776233918.208472810] [find_free_space_action_server]: find_vertices: [[-0.68756667 20.5       ]
+[find_parking_space-1]  [ 0.31243333 20.5       ]
+[find_parking_space-1]  [ 0.31243333 21.        ]
+[find_parking_space-1]  [-0.68756667 21.        ]]
+[find_parking_space-1] [INFO] [1776233918.278013266] [find_free_space_action_server]: search_posestamped length: 220
+[find_parking_space-1] [INFO] [1776233918.279225016] [find_free_space_action_server]: 一共220个避障...
+[find_parking_space-1] [INFO] [1776233918.279625004] [find_free_space_action_server]: 排除障碍物点...
+[find_parking_space-1] [INFO] [1776233918.291038299] [find_free_space_action_server]: 排除障碍物点后还剩220个避障...
+[find_parking_space-1] [INFO] [1776233918.295495790] [find_free_space_action_server]: 机器人到当前点的连线满足
+[find_parking_space-1] [INFO] [1776233918.297502448] [find_free_space_action_server]: avoidance_point:geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233918, nanosec=295863053), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.3124333274482892, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233918.299163935] [find_free_space_action_server]: 成功找到避让点geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233918, nanosec=295863053), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.3124333274482892, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233918.304701736] [find_free_space_action_server]: 成功找到避让点*****
+[find_parking_space-1] [INFO] [1776233918.319042516] [find_free_space_action_server]: === 性能统计 === 总耗时: 0.3164s, CPU时间: 0.2767s, CPU平均: 87.8%, CPU峰值: 141.0%
+
+
+root@tj2022-Default-string:/capella/lib/python3.10/site-packages/find_free_space# ros2 launch /capella/lib/python3.10/site-packages/find_free_space/src/launch/find_free_space.launch.py
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-04-15-06-19-26-804065-tj2022-Default-string-373240
+[INFO] [launch]: Default logging verbosity is set to INFO
+Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MIN value: 3.0.
+Using default GARAGE_FIND_PARKING_POINT_SEARCH_RADIUS_MAX value: 4.0.
+Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MIN value: 0.0.
+Using default GARAGE_FIND_PARKING_POINT_OUTSIDE_MAX value: 0.5.
+[INFO] [find_parking_space-1]: process started with pid [373244]
+[find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+[find_parking_space-1]   setattr(self, word, getattr(machar, word).flat[0])
+[find_parking_space-1] /usr/local/lib/python3.10/dist-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+[find_parking_space-1]   return self._float_to_str(self.smallest_subnormal)
+[find_parking_space-1] 1776233968.225793 [0] find_parki: config: //CycloneDDS/Domain/Internal/MinimumSocketReceiveBufferSize: setting moved to //CycloneDDS/Domain/Internal/SocketReceiveBufferSize[@min] (/capella/dds.xml line 15)
+[find_parking_space-1] [INFO] [1776233968.486814669] [find_free_space_action_server]: find_free_space_action_server started.
+[find_parking_space-1] [INFO] [1776233968.500508276] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[find_parking_space-1] [INFO] [1776233968.501744415] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[find_parking_space-1] [INFO] [1776233968.506814017] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[find_parking_space-1] [INFO] [1776233968.509331522] [find_free_space_action_server]: search_interval: 0.5
+[find_parking_space-1] [INFO] [1776233968.510159684] [find_free_space_action_server]: search_radius_min: 3.0
+[find_parking_space-1] [INFO] [1776233968.510912176] [find_free_space_action_server]: search_radius_max: 4.0
+[find_parking_space-1] [INFO] [1776233968.511635782] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[find_parking_space-1] [INFO] [1776233968.512156317] [find_free_space_action_server]: outside_min: 0.0
+[find_parking_space-1] [INFO] [1776233968.512536748] [find_free_space_action_server]: outside_max: 0.5
+[find_parking_space-1] [INFO] [1776233968.512898206] [find_free_space_action_server]: check_service_max_time: 1.0
+[find_parking_space-1] [INFO] [1776233968.513337853] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[find_parking_space-1] [INFO] [1776233968.513865602] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[find_parking_space-1] /opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+[find_parking_space-1]   warnings.warn(
+[find_parking_space-1] [INFO] [1776233968.592262766] [find_free_space_action_server]: robot_width: 1.32
+[find_parking_space-1] [ERROR] [1776233968.644609421] [find_free_space_action_server]: Lookup would require extrapolation at time 1776233968.601115, but only time 1776233968.614569 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[find_parking_space-1] [INFO] [1776233969.946920394] [find_free_space_action_server]: 开始寻找避让点...
+[find_parking_space-1] [INFO] [1776233969.953270964] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=-16.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=21.0, z=0.0), geometry_msgs.msg.Point32(x=14.0, y=27.5, z=0.0), geometry_msgs.msg.Point32(x=-16.0, y=27.5, z=0.0)])]
+[find_parking_space-1] [INFO] [1776233969.969625695] [find_free_space_action_server]: 寻找当前通行区域...
+[find_parking_space-1] [INFO] [1776233970.009435308] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233970.010215886] [find_free_space_action_server]: robot_x: 3.3122663377660557, robot_y: 21.576665604176863
+[find_parking_space-1] [INFO] [1776233970.010774208] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.011254248] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.011662212] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.012133062] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233970.014556315] [find_free_space_action_server]: robot_x: 3.3122663377660557, robot_y: 21.576665604176863
+[find_parking_space-1] [INFO] [1776233970.038175444] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.040379978] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.041132117] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.043602231] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233970.044773676] [find_free_space_action_server]: robot_x: 3.3122663377660557, robot_y: 21.576665604176863
+[find_parking_space-1] [INFO] [1776233970.053631492] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.060204466] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.067356778] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233970.068760624] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233970.078080929] [find_free_space_action_server]: robot_x: 3.3122663377660557, robot_y: 21.576665604176863
+[find_parking_space-1] [INFO] [1776233970.079259196] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.080183233] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.081116971] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.096376146] [find_free_space_action_server]: robot: (3.3122952948171833, 21.576826385397293)
+[find_parking_space-1] [INFO] [1776233970.108378565] [find_free_space_action_server]: polygons: 
+[find_parking_space-1] [[-16.   21. ]
+[find_parking_space-1]  [ 14.   21. ]
 [find_parking_space-1]  [ 14.   27.5]
 [find_parking_space-1]  [-16.   27.5]]
-[find_parking_space-1] [INFO] [1776221464.726913982] [find_free_space_action_server]: 当前通行区域: [(-16.0, 22.5),(14.0, 22.5),(14.0, 27.5),(-16.0, 27.5)]
-[find_parking_space-1] [INFO] [1776221464.727542004] [find_free_space_action_server]: 寻找停靠点...
-[find_parking_space-1] [INFO] [1776221464.728119657] [find_free_space_action_server]: origin_x: -28.6295
-[find_parking_space-1] [INFO] [1776221464.728632546] [find_free_space_action_server]: origin_y: -14.205
-[find_parking_space-1] [INFO] [1776221464.729259327] [find_free_space_action_server]: resolution: 0.10000000149011612
-[find_parking_space-1] [INFO] [1776221464.730242649] [find_free_space_action_server]: width: 851
-[find_parking_space-1] [INFO] [1776221464.730825807] [find_free_space_action_server]: height: 616
-[find_parking_space-1] [INFO] [1776221464.739832716] [find_free_space_action_server]: 寻找最近的边界...
-[find_parking_space-1] [INFO] [1776221464.755992899] [find_free_space_action_server]: nearest_boundary: [(-16.0, 22.5), (14.0, 22.5)]
-[find_parking_space-1] [INFO] [1776221464.767076820] [find_free_space_action_server]: delta_y: 0.0
-[find_parking_space-1] [INFO] [1776221464.768049262] [find_free_space_action_server]: delta_x: -30.0
-[find_parking_space-1] [INFO] [1776221464.776957964] [find_free_space_action_server]: k_radian: 3.141592653589793
-[find_parking_space-1] [INFO] [1776221464.780258277] [find_free_space_action_server]: k_degree: 180.0
-[find_parking_space-1] [INFO] [1776221464.784979472] [find_free_space_action_server]: kdirections_: [3.141592653589793, 0.0]
-[find_parking_space-1] [INFO] [1776221464.787197923] [find_free_space_action_server]: robot: (8.082433992676767, 21.941035445015334)
-[find_parking_space-1] [INFO] [1776221464.791588706] [find_free_space_action_server]: car: (9.0, 25.0)
-[find_parking_space-1] [INFO] [1776221464.793959629] [find_free_space_action_server]: k: 3.141592653589793, car_robot_k: -1.8622161235218873
-[find_parking_space-1] [INFO] [1776221464.796115425] [find_free_space_action_server]: k_diff: 1.279376530067906
-[find_parking_space-1] [INFO] [1776221464.797537195] [find_free_space_action_server]: k: 3.141592653589793, k_robot: 1.467944835082673, k_diff2: 1.6736478185071202
-[find_parking_space-1] [INFO] [1776221464.799287821] [find_free_space_action_server]: 在机器人后方避车
-[find_parking_space-1] [INFO] [1776221464.800729661] [find_free_space_action_server]: i: 0, j: 3
-[find_parking_space-1] [INFO] [1776221464.802792618] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.803507253] [find_free_space_action_server]: xi: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.804122468] [find_free_space_action_server]: xj: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.810088351] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.810816321] [find_free_space_action_server]: i: 1, j: 0
-[find_parking_space-1] [INFO] [1776221464.811422395] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.812068195] [find_free_space_action_server]: xi: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.812966325] [find_free_space_action_server]: xj: -16.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.813682413] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.823309851] [find_free_space_action_server]: i: 2, j: 1
-[find_parking_space-1] [INFO] [1776221464.825177012] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.825848211] [find_free_space_action_server]: xi: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.826420990] [find_free_space_action_server]: xj: 14.0, yi: 22.5
-[find_parking_space-1] [INFO] [1776221464.826955740] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.851924347] [find_free_space_action_server]: i: 3, j: 2
-[find_parking_space-1] [INFO] [1776221464.855093232] [find_free_space_action_server]: robot_x: 8.082433992676767, robot_y: 21.941035445015334
-[find_parking_space-1] [INFO] [1776221464.857097885] [find_free_space_action_server]: xi: -16.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.860056546] [find_free_space_action_server]: xj: 14.0, yi: 27.5
-[find_parking_space-1] [INFO] [1776221464.867612670] [find_free_space_action_server]: intersect: False
-[find_parking_space-1] [INFO] [1776221464.870193615] [find_free_space_action_server]: 返回机器人当前点为停靠点
-[find_parking_space-1] [INFO] [1776221464.887999582] [find_free_space_action_server]: avoidance_point:geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776221464, nanosec=870433544), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=8.082433992676767, y=21.941035445015334, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)))
-[find_parking_space-1] [INFO] [1776221464.888894896] [find_free_space_action_server]: 成功找到避让点geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776221464, nanosec=870433544), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=8.082433992676767, y=21.941035445015334, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)))
-[find_parking_space-1] [INFO] [1776221464.890671185] [find_free_space_action_server]: 成功找到避让点*****
-[find_parking_space-1] [INFO] [1776221464.897615393] [find_free_space_action_server]: === 性能统计 === 总耗时: 0.2363s, CPU时间: 0.1803s, CPU平均: 68.7%, CPU峰值: 117.8%
+[find_parking_space-1] [INFO] [1776233970.118413664] [find_free_space_action_server]: inside polygon: True
+[find_parking_space-1] [INFO] [1776233970.122024588] [find_free_space_action_server]: 当前通行区域: [(-16.0, 21.0),(14.0, 21.0),(14.0, 27.5),(-16.0, 27.5)]
+[find_parking_space-1] [INFO] [1776233970.125107548] [find_free_space_action_server]: 寻找停靠点...
+[find_parking_space-1] [INFO] [1776233970.131947964] [find_free_space_action_server]: origin_x: -28.6295
+[find_parking_space-1] [INFO] [1776233970.132698859] [find_free_space_action_server]: origin_y: -14.205
+[find_parking_space-1] [INFO] [1776233970.145896415] [find_free_space_action_server]: resolution: 0.10000000149011612
+[find_parking_space-1] [INFO] [1776233970.151834073] [find_free_space_action_server]: width: 851
+[find_parking_space-1] [INFO] [1776233970.156650579] [find_free_space_action_server]: height: 616
+[find_parking_space-1] [INFO] [1776233970.168593204] [find_free_space_action_server]: 寻找最近的边界...
+[find_parking_space-1] [INFO] [1776233970.170310393] [find_free_space_action_server]: nearest_boundary: [(-16.0, 21.0), (14.0, 21.0)]
+[find_parking_space-1] [INFO] [1776233970.173663674] [find_free_space_action_server]: delta_y: 0.0
+[find_parking_space-1] [INFO] [1776233970.175599650] [find_free_space_action_server]: delta_x: -30.0
+[find_parking_space-1] [INFO] [1776233970.177189340] [find_free_space_action_server]: k_radian: 3.141592653589793
+[find_parking_space-1] [INFO] [1776233970.177833406] [find_free_space_action_server]: k_degree: 180.0
+[find_parking_space-1] [INFO] [1776233970.182254352] [find_free_space_action_server]: kdirections_: [3.141592653589793, 0.0]
+[find_parking_space-1] [INFO] [1776233970.189957147] [find_free_space_action_server]: robot: (3.3122862282443206, 21.576873922161266)
+[find_parking_space-1] [INFO] [1776233970.203334807] [find_free_space_action_server]: car: (9.0, 25.0)
+[find_parking_space-1] [INFO] [1776233970.215842423] [find_free_space_action_server]: k: 3.141592653589793, car_robot_k: -2.5998171257926397
+[find_parking_space-1] [INFO] [1776233970.219368488] [find_free_space_action_server]: k_diff: 0.541775527797153
+[find_parking_space-1] [INFO] [1776233970.231661467] [find_free_space_action_server]: k: 3.141592653589793, k_robot: -0.09444465117391254, k_diff2: 3.047148002415881
+[find_parking_space-1] [INFO] [1776233970.247013807] [find_free_space_action_server]: 在机器人后方避车
+[find_parking_space-1] [INFO] [1776233970.248572690] [find_free_space_action_server]: i: 0, j: 3
+[find_parking_space-1] [INFO] [1776233970.260212059] [find_free_space_action_server]: robot_x: 3.3122862282443206, robot_y: 21.576873922161266
+[find_parking_space-1] [INFO] [1776233970.261786623] [find_free_space_action_server]: xi: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.266066935] [find_free_space_action_server]: xj: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.270245426] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.271441637] [find_free_space_action_server]: i: 1, j: 0
+[find_parking_space-1] [INFO] [1776233970.272559031] [find_free_space_action_server]: robot_x: 3.3122862282443206, robot_y: 21.576873922161266
+[find_parking_space-1] [INFO] [1776233970.273859296] [find_free_space_action_server]: xi: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.274921687] [find_free_space_action_server]: xj: -16.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.276704791] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.282758099] [find_free_space_action_server]: i: 2, j: 1
+[find_parking_space-1] [INFO] [1776233970.285761034] [find_free_space_action_server]: robot_x: 3.3122862282443206, robot_y: 21.576873922161266
+[find_parking_space-1] [INFO] [1776233970.288010381] [find_free_space_action_server]: xi: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.289232494] [find_free_space_action_server]: xj: 14.0, yi: 21.0
+[find_parking_space-1] [INFO] [1776233970.304176610] [find_free_space_action_server]: intersect: True
+[find_parking_space-1] [INFO] [1776233970.311475753] [find_free_space_action_server]: i: 3, j: 2
+[find_parking_space-1] [INFO] [1776233970.312477417] [find_free_space_action_server]: robot_x: 3.3122862282443206, robot_y: 21.576873922161266
+[find_parking_space-1] [INFO] [1776233970.313178611] [find_free_space_action_server]: xi: -16.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.323487916] [find_free_space_action_server]: xj: 14.0, yi: 27.5
+[find_parking_space-1] [INFO] [1776233970.328995150] [find_free_space_action_server]: intersect: False
+[find_parking_space-1] [INFO] [1776233970.331262596] [find_free_space_action_server]: 生成所有停靠点...
+[find_parking_space-1] [INFO] [1776233970.333294527] [find_free_space_action_server]: find_vertices: [[-0.68771377 20.5       ]
+[find_parking_space-1]  [ 0.31228623 20.5       ]
+[find_parking_space-1]  [ 0.31228623 21.        ]
+[find_parking_space-1]  [-0.68771377 21.        ]]
+[find_parking_space-1] [INFO] [1776233970.394410636] [find_free_space_action_server]: search_posestamped length: 231
+[find_parking_space-1] [INFO] [1776233970.398294668] [find_free_space_action_server]: 一共231个避障...
+[find_parking_space-1] [INFO] [1776233970.403235859] [find_free_space_action_server]: 排除障碍物点...
+[find_parking_space-1] [INFO] [1776233970.420203606] [find_free_space_action_server]: 排除障碍物点后还剩231个避障...
+[find_parking_space-1] [INFO] [1776233970.424176494] [find_free_space_action_server]: 机器人到当前点的连线满足
+[find_parking_space-1] [INFO] [1776233970.434018784] [find_free_space_action_server]: avoidance_point:geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233970, nanosec=424478755), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.3122862282443215, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233970.450487079] [find_free_space_action_server]: 成功找到避让点geometry_msgs.msg.PoseStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=1776233970, nanosec=424478755), frame_id='map'), pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.3122862282443215, y=21.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=1.0, w=6.123233995736766e-17)))
+[find_parking_space-1] [INFO] [1776233970.452019170] [find_free_space_action_server]: 成功找到避让点*****
+[find_parking_space-1] [INFO] [1776233970.464817468] [find_free_space_action_server]: === 性能统计 === 总耗时: 0.5214s, CPU时间: 0.3816s, CPU平均: 75.9%, CPU峰值: 141.6%
