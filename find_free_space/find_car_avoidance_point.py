@@ -282,36 +282,25 @@ class CarAvoidancePointActionServer(Node):
         # self.get_logger().info(f'机器人当前位姿: [{self.robot_pose.pose.position.x}, {self.robot_pose.pose.position.y}]', throttle_duration_sec=2)
 
     def get_vertices_callback(self):
-        """
-        从 action goal 传入的多边形列表 self.polygons 中，选出机器人当前所在或最靠近的通行区域。
-        结果保存在 self.vertices 中，供后续避让点搜索使用。
-        """
-        # 没有收到多边形时，直接返回，不更新 self.vertices
         if len(self.polygons) == 0:
             pass
         else:
             current_polygon_vertices = []
-            # 记录机器人到各多边形边界的最小距离，初始设为一个很大的值
             min_dis_robot_to_polygon = 1000.0
             for polygon in self.polygons:
-                # 将多边形的顶点列表转换为 numpy 数组
                 current_polygon_vertices = np.array([[point.x,point.y] for point in polygon.points])
-                # 判断机器人当前位置是否在该多边形内部
                 robot_is_in_area = self.is_point_inside_parallelogram(self.robot_pose.pose.position.x,self.robot_pose.pose.position.y,current_polygon_vertices)
                 self.get_logger().info(f"robot: ({self.robot_pose.pose.position.x}, {self.robot_pose.pose.position.y})")
                 self.get_logger().info(f'polygons: \n{current_polygon_vertices}')
                 if robot_is_in_area:
-                    # 机器人在该多边形内部
                     self.vertices = current_polygon_vertices
                     self.get_logger().info('inside polygon: True')
                     break
                 else:
-                    # 机器人不在该多边形内部，计算机器人到该多边形各边的最短距离
                     self.get_logger().info('inside polygon: False')
                     robot_x = self.robot_pose.pose.position.x
                     robot_y = self.robot_pose.pose.position.y
                     dis = self.dis_point_to_rect(robot_x, robot_y, current_polygon_vertices)
-                    # 仅当该多边形距离机器人较近（< 2.0m）时才考虑，取其中距离最小的
                     if dis < min_dis_robot_to_polygon and dis < 2.0:
                         min_dis_robot_to_polygon = dis
                         self.vertices = current_polygon_vertices
@@ -345,24 +334,6 @@ class CarAvoidancePointActionServer(Node):
 
         return self.dis_point_to_point(x, y, proj_x, proj_y)
     
-    def dis_point_to_line2(self, x, y, p1_x, p1_y, p2_x, p2_y):
-        """
-        计算点到直线的垂直距离
-        """
-        # 处理直线为垂直线的情况
-        if p1_x == p2_x:
-            return abs(x - p1_x)
-        
-        # 计算直线方程参数 (Ax + By + C = 0)
-        A = p2_y - p1_y
-        B = p1_x - p2_x
-        C = p2_x * p1_y - p1_x * p2_y
-        
-        # 计算距离
-        numerator = abs(A * x + B * y + C)
-        denominator = math.sqrt(A**2 + B**2)
-
-        return numerator / denominator
 
     def dis_point_to_rect(self, x, y, rect):
         length = len(rect)
@@ -732,7 +703,7 @@ class CarAvoidancePointActionServer(Node):
 
             if len(valid_external) > 0:
                 # 新增的一个   选离 nearest_boundary  机器人最近的长边最近的点   
-                best = min(valid_external, key=lambda pose: self.dis_point_to_line2(
+                best = min(valid_external, key=lambda pose: self.dis_point_to_line(
                     pose.pose.position.x, pose.pose.position.y,
                     nearest_boundary[0][0], nearest_boundary[0][1],
                     nearest_boundary[1][0], nearest_boundary[1][1]
@@ -807,7 +778,7 @@ class CarAvoidancePointActionServer(Node):
         else:
             # 机器人在通道外部
             offset_min_local = offset_min
-            dis_robot_to_nearest_bound = self.dis_point_to_line2(
+            dis_robot_to_nearest_bound = self.dis_point_to_line(
                 robot_x, robot_y,
                 nearest_boundary[0][0], nearest_boundary[0][1],
                 nearest_boundary[1][0], nearest_boundary[1][1]
@@ -1838,5 +1809,4 @@ def main(args=None):
 
 
 if __name__ == '__main__':
-    main()
     
