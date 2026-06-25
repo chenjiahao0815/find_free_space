@@ -349,26 +349,6 @@ class CarAvoidancePointActionServer(Node):
                 min_dis = dis
         return min_dis
 
-    def _nearest_edge_is_long(self, robot_x, robot_y, vertices):
-        """
-        判断机器人离通道的最近边是否是长边。
-        返回 (is_long, dist_to_nearest_edge)。
-        """
-        edges = [(vertices[i], vertices[(i + 1) % 4]) for i in range(4)]
-        lengths = [
-            self.dis_point_to_point(e[0][0], e[0][1], e[1][0], e[1][1])
-            for e in edges
-        ]
-        dists = [
-            self.dis_point_to_line(robot_x, robot_y, e[0][0], e[0][1], e[1][0], e[1][1])
-            for e in edges
-        ]
-        nearest_idx = int(np.argmin(dists))
-        # 矩形 2 长 2 短，排序后取第 3 个（较长的那个中间值）作为长短边阈值
-        threshold = sorted(lengths)[2]
-        return lengths[nearest_idx] >= threshold, dists[nearest_idx]
-
-
     def action_goal_callback(self, goal_handle):
         self.get_logger().info('开始寻找避让点...')
         # self.get_logger().info(f'goal_handle.request..{goal_handle.request}')
@@ -799,17 +779,31 @@ class CarAvoidancePointActionServer(Node):
             )
         else:
             # 机器人在通道外部
-            is_long, dis_to_nearest_edge = self._nearest_edge_is_long(
-                robot_x, robot_y, self.vertices
-            )
+            # 复用 dis_point_to_line 找最近边，并记录它的长度
+            verts = self.vertices
+            min_dis = float('inf')
+            nearest_edge_len = 0.0
+            for i in range(4):
+                p1 = verts[i]
+                p2 = verts[(i + 1) % 4]
+                d = self.dis_point_to_line(robot_x, robot_y, p1[0], p1[1], p2[0], p2[1])
+                if d < min_dis:
+                    min_dis = d
+                    nearest_edge_len = self.dis_point_to_point(p1[0], p1[1], p2[0], p2[1])
+
+            short_edge_len = self.calculate_total_passage_width(verts)  # 复用：最短边长度
+            # 最近边长度接近短边长度 → 从短边出去；明显更长 → 从长边出去
+            nearest_is_long = nearest_edge_len > short_edge_len * 1.5
+
+            dis_robot_to_nearest_bound = min_dis  # 复用这个值，下面 offset_min_local 也用它
 
             offset_min_local = offset_min
-            if offset_min < dis_to_nearest_edge < offset_max:
-                offset_min_local = dis_to_nearest_edge
-
-            if is_long and dis_to_nearest_edge >= self.stop_in_place_min_dist:
+            if offset_min < dis_robot_to_nearest_bound < offset_max:
+                offset_min_local = dis_robot_to_nearest_bound
+            elif nearest_is_long and dis_robot_to_nearest_bound >= self.stop_in_place_min_dist:
+                # 从长边出去、且离边够远 → 路肩位置，可原地停
                 self.get_logger().info(
-                    f"机器人在长边外侧 {dis_to_nearest_edge:.2f}m，原地停车"
+                    f"机器人在长边外侧 {dis_robot_to_nearest_bound:.2f}m，原地停车"
                 )
                 ret_pose = PoseStamped()
                 ret_pose.header.stamp = self.get_clock().now().to_msg()
@@ -828,7 +822,7 @@ class CarAvoidancePointActionServer(Node):
                 return ret_pose
             else:
                 self.get_logger().info(
-                    f"出口边是{'长边' if is_long else '短边'}, 距离{dis_to_nearest_edge:.2f}m，"
+                    f"出口边是{'长边' if nearest_is_long else '短边'}, 距离{dis_robot_to_nearest_bound:.2f}m，"
                     f"不满足原地停条件，继续搜索"
                 )
 
